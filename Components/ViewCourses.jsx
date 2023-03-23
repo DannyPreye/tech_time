@@ -48,7 +48,7 @@ const ViewCourses = () => {
           >
             View Course
           </button>
-          <div className="flex  gap-[13.19px] mt-[24px] flex-wrap w-[80%]">
+          <div className="flex  gap-[13.19px] mt-[24px] flex-wrap w-[80%] lg:w-[492px]">
             {view_course.map((button, id) => (
               <div
                 className={`w-[${button.sm_container_w}px] lg:w-[${button.lg_container_w}px] flex items-center gap-[8px]
@@ -77,8 +77,64 @@ const ViewCourses = () => {
         </section>
 
         {/* Right Section */}
-        <section className="lg:w-[60%] relative">
-          <Image src={'/view_course/guy_pics.svg'} width={805} height={622} />
+        <section className=" relative lg:flex-shrink-0 lg:h-[622px] grid place-items-center mx-auto">
+          <div className="absolute bottom-0 right-[-5%]">
+            <Image
+              src={'/view_course/design.svg'}
+              width={91}
+              height={125}
+              className="lg:hidden block"
+            />
+            <Image
+              src={'/view_course/design.svg'}
+              width={198.92}
+              height={236.43}
+              className="hidden lg:block"
+            />
+          </div>
+          <div className="relative">
+            {/* Desktop View */}
+            <Image
+              src={'/view_course/guy_pics.svg'}
+              width={606}
+              height={612}
+              className="lg:block hidden"
+            />
+            <Image
+              src={'/view_course/guy_pics.svg'}
+              width={265}
+              height={224}
+              className="lg:hidden block"
+            />
+          </div>
+          <div className="absolute lg:left-[-30%] left-[-22%] bottom-0">
+            <Image
+              src={'/view_course/tech_lady.svg'}
+              width={397.3}
+              height={265}
+              className="lg:block hidden"
+            />
+            <Image
+              src={'/view_course/tech_lady.svg'}
+              width={174}
+              height={116}
+              className="lg:hidden block"
+            />
+          </div>
+          <div className="absolute top-[15%] left-[-20%]">
+            <Image
+              src={'/view_course/follower.svg'}
+              width={205}
+              height={81}
+              className="hidden lg:block"
+            />
+            <Image
+              src={'/view_course/follower.svg'}
+              width={90}
+              height={36}
+              className="block lg:hidden"
+            />
+          </div>
         </section>
       </div>
     </div>
