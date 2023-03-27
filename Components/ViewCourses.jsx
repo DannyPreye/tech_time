@@ -1,11 +1,56 @@
 import Image from 'next/image';
 import React from 'react';
 import { view_course } from '../lib/contants';
+import P from './P';
 
 const ViewCourses = () => {
   return (
-    <div className="bg-[#F8F9FC]">
-      <div className="flex items-center py-[40px] gap-[99px] container mx-auto px-5  flex-wrap lg:flex-nowrap">
+    <div className=" relative">
+      <div>
+        {/* Other design images */}
+        <div>
+          {/* Desktop Screen */}
+          <Image
+            src={'/view_course/zigzag.svg'}
+            width={102}
+            height={15.09}
+            alt="zigzag"
+            className="absolute right-0 top-[5%] hidden lg:block"
+          />
+          <Image
+            src={'/view_course/zigzag.svg'}
+            width={44.71}
+            height={4.13}
+            alt="zigzag"
+            className="absolute right-0 top-[30%] block lg:hidden"
+          />
+        </div>
+        <div>
+          <Image
+            src={'/view_course/rounded.svg'}
+            width={164}
+            height={136.7}
+            alt="rounded circle"
+            className="absolute right-0 bottom-0 hidden lg:block "
+          />
+          <Image
+            src={'/view_course/rounded.svg'}
+            width={45}
+            height={47.3}
+            alt="rounded circle"
+            className="absolute right-0 bottom-[10%] block lg:hidden"
+          />
+        </div>
+        <span
+          className="border-[0.12px] block border-[#c8a1fd] w-[12px] h-[12px] 
+      rounded-full absolute bottom-0 right-[15%]"
+        />
+      </div>
+
+      <div
+        className="flex items-center py-[40px] gap-[99px] container 
+      mx-auto px-5  flex-wrap lg:flex-nowrap"
+      >
         {/* Left Section */}
         <section className="flex flex-col items-center lg:items-start ">
           <h2
@@ -32,14 +77,11 @@ const ViewCourses = () => {
               />
             </span>
           </h2>
-          <p
-            className="capitalize font-[500] text-[8px] lg:text-[16px] 
-        text-center lg:text-left leading-[15.39px] lg:leading-[28px] mt-[16px]"
-          >
-            high-defination video is video of higher resolution and quality than
+          <P
+            text={`     high-defination video is video of higher resolution and quality than
             standard definition. while there&apos;s no standard meaning for high
-            definition, generally any standard video image
-          </p>
+            definition, generally any standard video image`}
+          />
 
           <button
             className=" w-[83px] lg:w-[166px] h-[27px] lg:h-[54px] bg-[#004DB3] rounded-[4px]
@@ -48,7 +90,7 @@ const ViewCourses = () => {
           >
             View Course
           </button>
-          <div className="flex  gap-[13.19px] mt-[24px] flex-wrap w-[80%] lg:w-[492px]">
+          <div className="flex  gap-[13.19px] mt-[24px] flex-wrap w-[277.38px] lg:w-[492px]">
             {view_course.map((button, id) => (
               <div
                 className={`w-[${button.sm_container_w}px] lg:w-[${button.lg_container_w}px] flex items-center gap-[8px]
@@ -78,20 +120,25 @@ const ViewCourses = () => {
 
         {/* Right Section */}
         <section className=" relative lg:flex-shrink-0 lg:h-[622px] grid place-items-center mx-auto">
-          <div className="absolute bottom-0 right-[-5%]">
+          <div className="absolute bottom-[-4%] right-[-10%] lg:bottom-0 lg:right-[-5%]">
+            {/* Mobile view */}
             <Image
               src={'/view_course/design.svg'}
               width={91}
               height={125}
-              className="lg:hidden block"
+              className="lg:hidden block relative "
+              alt="design"
             />
+            {/* Desktop View */}
             <Image
               src={'/view_course/design.svg'}
               width={198.92}
               height={236.43}
               className="hidden lg:block"
+              alt="design"
             />
           </div>
+
           <div className="relative">
             {/* Desktop View */}
             <Image
@@ -107,7 +154,7 @@ const ViewCourses = () => {
               className="lg:hidden block"
             />
           </div>
-          <div className="absolute lg:left-[-30%] left-[-22%] bottom-0">
+          <div className="absolute lg:left-[-30%] left-[-22%] lg:bottom-0 bottom-[-15%]">
             <Image
               src={'/view_course/tech_lady.svg'}
               width={397.3}

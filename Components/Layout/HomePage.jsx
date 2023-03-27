@@ -13,7 +13,7 @@ const HomePage = ({ children }) => {
           <Hero />
         </div>
       </div>
-      <div>{children}</div>
+      <div className="bg-[#F8F9FC]">{children}</div>
     </div>
   );
 };
