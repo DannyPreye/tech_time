@@ -1,6 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { PopularCourse, Support, ViewCourses, WhyUs } from '../../Components';
+import {
+  PopularCourse,
+  Support,
+  Testimonials,
+  ViewCourses,
+  WhyUs
+} from '../../Components';
 import HomePage from '../../Components/Layout/HomePage';
 
 export default function Home() {
@@ -11,6 +17,7 @@ export default function Home() {
         <ViewCourses />
         <WhyUs />
         <PopularCourse />
+        <Testimonials />
       </HomePage>
     </>
   );
