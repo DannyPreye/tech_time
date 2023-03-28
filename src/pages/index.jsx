@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import {
+  JoinCommunity,
   PopularCourse,
   Support,
   Testimonials,
@@ -18,6 +19,7 @@ export default function Home() {
         <WhyUs />
         <PopularCourse />
         <Testimonials />
+        <JoinCommunity />
       </HomePage>
     </>
   );
