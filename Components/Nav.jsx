@@ -6,7 +6,7 @@ import { menuContent } from '../lib/contants';
 const Nav = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   return (
-    <div className="flex justify-between items-center  h-[200px] ">
+    <div className="flex justify-between items-center  lg:h-[200px] pt-[49px] pb-[52px] lg:pt-0">
       {/* Show this image on desktop view */}
       <Image
         src="/logo.svg"

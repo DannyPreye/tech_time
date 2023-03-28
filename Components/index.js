@@ -5,3 +5,4 @@ export { default as WhyUs } from './WhyUs';
 export { default as PopularCourse } from './PopularCourse';
 export { default as Testimonials } from './Testimonial';
 export { default as JoinCommunity } from './JoinCommunity';
+export { default as FAQ } from './FAQ';
