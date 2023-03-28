@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { Hero } from '..';
+import Footer from '../Footer';
 import Nav from '../Nav';
 
 const HomePage = ({ children }) => {
@@ -14,6 +15,8 @@ const HomePage = ({ children }) => {
         </div>
       </div>
       <div className="bg-[#F8F9FC]">{children}</div>
+
+      <Footer />
     </div>
   );
 };

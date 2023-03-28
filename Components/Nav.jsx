@@ -49,15 +49,56 @@ const Nav = () => {
       </div>
 
       {/* Show Icon only on mobile view */}
-      <Image
-        src={'/menu_Icon.svg'}
-        alt={'menu '}
-        width={18}
-        height={12}
-        className="block lg:hidden"
-        priority
+      <div
+        className="cursor-pointer"
         onClick={() => setMenuIsOpen(!menuIsOpen)}
-      />
+      >
+        {menuIsOpen ? (
+          <span className="block cursor-pointer text-[20px] text-white h-[12px]">
+            X
+          </span>
+        ) : (
+          <Image
+            src={'/menu_Icon.svg'}
+            alt={'menu '}
+            width={18}
+            height={12}
+            className="block lg:hidden"
+            priority
+          />
+        )}
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed h-screen w-[60%]  backdrop-blur-lg
+       bg-[#004eb38f] flex flex-col items-center py-8  top-0  z-[4000] duration-700 ${
+         menuIsOpen ? 'left-0' : '-left-full'
+       }`}
+      >
+        <div>
+          <Image
+            src="/logo.svg"
+            width={80}
+            height={47}
+            alt="tech time"
+            className="object-contain"
+            priority
+          />
+
+          <div className="flex flex-col  gap-[2rem] mt-8 ">
+            {menuContent.map(item => (
+              <Link
+                href={'#'}
+                className="text-[#AAC4E6]  focus:text-white text-[16px] font-[700]
+             "
+              >
+                {item}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

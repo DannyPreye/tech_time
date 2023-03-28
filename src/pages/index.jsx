@@ -14,6 +14,10 @@ import HomePage from '../../Components/Layout/HomePage';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Tech Time</title>
+        <link rel="icon" href="/logo.svg" />
+      </Head>
       <HomePage>
         <Support />
         <ViewCourses />
