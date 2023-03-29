@@ -6,7 +6,7 @@ import Nav from '../Nav';
 
 const HomePage = ({ children }) => {
   return (
-    <div className="">
+    <div className="font-satoshi">
       <div className="bg-[#004db4]  relative ">
         <Image src="/desktop/hero_design.svg" fill alt="hero " priority />
         <div className="container mx-auto relative px-5">
