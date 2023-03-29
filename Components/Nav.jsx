@@ -48,9 +48,9 @@ const Nav = () => {
         </button>
       </div>
 
-      {/* Show Icon only on mobile view */}
+      {/* Show Icon only on mobile view  */}
       <div
-        className="cursor-pointer"
+        className="cursor-pointer lg:hidden block"
         onClick={() => setMenuIsOpen(!menuIsOpen)}
       >
         {menuIsOpen ? (

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    container_name: tech-time
+    build: "./"
+    image: tech-time-img
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/tech-time
+      - ./tech-time/node_modules
