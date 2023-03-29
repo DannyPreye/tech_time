@@ -1,3 +1,7 @@
+# Tech Time
+
+A web application for an online tutoring platform. This project is built using Next.j, TailwindCSS and docker.
+
 ## Getting Started
 
 To build the Docker image, make sure Docker is installed on your system, navigate to the root directory of the project (where the docker-compose.yml file is located), and run the following command in your terminal:
