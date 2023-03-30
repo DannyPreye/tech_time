@@ -7,5 +7,6 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./:/tech-time
-      - ./tech-time/node_modules
+      - .:/tech-time
+      - /tech-time/node_modules
+      - /tech-time/.next
